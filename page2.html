@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道歉信 - 第二页</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffefd5;
+        }
+        .apology {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .video-container {
+            margin-top: 30px;
+        }
+
+        video {
+            width: 80%; /* 视频宽度为页面的80% */
+            max-width: 800px; /* 最大宽度限制为800px */
+            border: 5px solid #ff69b4; /* 视频边框色 */
+            border-radius: 10px;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #ff66b2; /* 粉色按钮 */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #ff3399; /* 橙红色按钮 hover */
+            transform: scale(1.05);
+        }
+
+        .back-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="apology">我超级有诚意的！</h1>
+
+    <div class="video-container">
+        <video controls autoplay>
+            <source src="对不起.mov" type="video/mp4">
+            你的浏览器不支持视频播放。
+        </video>
+    </div>
+
+    <h1 class="apology">原谅我吧，我写了一天的代码了，膝盖都快碎了！</h1>
+    <h1 class="apology">公主殿下大人不记小人过</h1>
+
+    <!-- 返回按钮 -->
+    <button class="back-button" onclick="goBack()">点击这里回去，公主可以自由听歌</button>
+
+    <script>
+        // 返回首页的函数
+        function goBack() {
+            window.location.href = "index.html"; // 跳转到首页
+        }
+    </script>
+</body>
+</html>
